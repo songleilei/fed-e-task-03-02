@@ -88,15 +88,15 @@ Vue.js 源码剖析-响应式原理、虚拟 DOM、模板编译和组件化
 
 1. 模板编译入口函数:compileToFunctions(template, {}, this)
 
-   1. 先从缓存中加载编译好的 render 函数
+   - 先从缓存中加载编译好的 render 函数
 
-   2. 缓存中没有则调用 compile(template, options)
+   - 缓存中没有则调用 compile(template, options)
 
 2. compile(template, options) 函数
 
-   1. 合并 options
+   - 合并 options
 
-   2. baseCompile(template.trim(), finalOptions) 编译模板
+   - baseCompile(template.trim(), finalOptions) 编译模板
 
 3. baseCompile
 
